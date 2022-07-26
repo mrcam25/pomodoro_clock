@@ -11,15 +11,47 @@
     mc:Ignorable="d">
     <Grid>
         <StackPanel>
-            <Label x:Name="MainHeaderLabel" HorizontalContentAlignment="Center">Pomodor Clock</Label>
+            <Label
+                x:Name="MainHeaderLabel"
+                HorizontalContentAlignment="Center"
+                FontFamily="Lucida Console"
+                FontSize="72">
+                Pomodoro Clock
+            </Label>
+            <Image
+                Width="300"
+                Height="200"
+                Margin="0,5,0,5"
+                Source="/nikolai-chernichenko-hFBsF-CX5eQ-unsplash.jpg">
+                <Image.OpacityMask>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="1" Color="Black" />
+                        <GradientStop Offset="1" />
+                    </RadialGradientBrush>
+                </Image.OpacityMask>
+            </Image>
             <Image />
             <TextBlock
-                Text="25:00"
+                FontFamily="Lucida Console"
+                FontSize="48"
+                Text="MM:SS"
                 TextAlignment="Center"
                 TextWrapping="Wrap" />
 
-            <ToggleButton x:Name="StopStartBtn" Content="Start Clock" />
-            <Button x:Name="PauseBtn" Content="Pause Clock" />
+            <ToggleButton
+                x:Name="StopStartBtn"
+                Width="200"
+                Height="20"
+                Margin="0,5,0,5"
+                Content="Start Clock"
+                FontFamily="Lucida Console" />
+            <Button
+                x:Name="PauseBtn"
+                Width="200"
+                Height="20"
+                Margin="0,5,0,5"
+                Content="Pause Clock"
+                FontFamily="Lucida Console" />
         </StackPanel>
 
     </Grid>
